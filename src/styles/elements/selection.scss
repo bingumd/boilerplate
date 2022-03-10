@@ -1,0 +1,16 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// ELEMENT: SELECTION
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Dependencies
+@use 'sass:tools';
+
+// Variables
+$bg-color: tools.color('black') !default;
+$color  : tools.color('white') !default;
+
+// Output
+::selection {
+    background-color: $bg-color;
+    color: $color;
+}

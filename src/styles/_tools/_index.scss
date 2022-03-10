@@ -1,0 +1,16 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// TOOLS
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// Functions and mixins
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+@use 'sass:settings/breakpoints' as *;
+
+@forward 'extends';
+@forward 'function';
+
+@forward '@bingumd/sass-tools' with (
+    $breakpoints: $breakpoints,
+    $fluid-breakpoint-min: $fluid-breakpoint-min,
+    $fluid-breakpoint-max:  $fluid-breakpoint-max,
+);

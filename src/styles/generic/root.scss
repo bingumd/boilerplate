@@ -1,0 +1,23 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// GENERIC: :ROOT
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Dependencies
+@use 'sass:string';
+@use 'sass:settings';
+@use 'sass:tools';
+
+// Output
+:root {
+    @each $key, $value in settings.$fonts-family {
+        --#{settings.$font-family-variable-prefix}#{$key}: #{string.unquote($value)};
+    }
+
+    @each $key, $value in settings.$fonts-size {
+        --#{settings.$font-size-variable-prefix}#{$key}: #{tools.fluid-scale($value)};
+    }
+
+    @each $keys, $values in settings.$colors {
+        --#{settings.$color-variable-prefix}#{$keys}: #{$values};
+    }
+}

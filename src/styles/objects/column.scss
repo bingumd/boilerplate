@@ -1,0 +1,11 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// OBJECT: COLUMN
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+.o-column {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: calc(var(--gap-y));
+    padding-right: calc(var(--gap-x) / 2);
+    padding-left: calc(var(--gap-x) / 2);
+}

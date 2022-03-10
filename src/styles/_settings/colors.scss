@@ -1,0 +1,44 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// SETTINGS: COLORS
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Dependencies
+@use 'sass:tools';
+
+// Grayscale colors
+$black:    #000000 !default;
+$gray-900: hsl(0, 0%, 10%) !default;
+$gray-800: hsl(0, 0%, 20%) !default;
+$gray-700: hsl(0, 0%, 30%) !default;
+$gray-600: hsl(0, 0%, 40%) !default;
+$gray-500: hsl(0, 0%, 50%) !default;
+$gray-400: hsl(0, 0%, 60%) !default;
+$gray-300: hsl(0, 0%, 70%) !default;
+$gray-200: hsl(0, 0%, 80%) !default;
+$gray-100: hsl(0, 0%, 90%) !default;
+$white:    #ffffff !default;
+
+// State color
+$success: #76d319 !default;
+$warning: #fc840c !default;
+$info   : #00cbf4 !default;
+$danger : #fc3559 !default;
+
+// Colect all colors
+$colors: (
+    'black'   : $black,
+    'gray-900': $gray-900,
+    'gray-800': $gray-800,
+    'gray-700': $gray-700,
+    'gray-600': $gray-600,
+    'gray-500': $gray-500,
+    'gray-400': $gray-400,
+    'gray-300': $gray-300,
+    'gray-200': $gray-200,
+    'gray-100': $gray-100,
+    'white'   : $white,
+    'success' : $success,
+    'warning' : $warning,
+    'info'    : $info,
+    'danger'  : $danger,
+) !default;

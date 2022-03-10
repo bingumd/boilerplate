@@ -1,0 +1,12 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// ELEMENTS
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// Unclassed HTML elements
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+@forward 'body' as body-*;
+@forward 'headings' as headings-*;
+@forward 'paragraph' as paragraph-*;
+@forward 'link' as link-*;
+@forward 'selection' as selection-*;
+@forward 'hr' as hr-*;

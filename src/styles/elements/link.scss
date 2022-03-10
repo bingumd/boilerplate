@@ -1,0 +1,33 @@
+/// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+/// ELEMENT: LINK
+/// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Dependencies
+@use 'sass:tools';
+
+// Variables
+$color           : var(--color-link, currentColor) !default;
+$decoration      : none !default;
+$hover-color     : var(--color-link-hover, currentColor) !default;
+$hover-decoration: none !default;
+$transition      : color 0.3s !default;
+
+// Output
+a {
+    color: $color;
+    text-decoration: $decoration;
+    transition: $transition;
+
+    &:not([class]):hover,
+    &:not([class]):focus,
+    &:not([class]):active {
+        color: $hover-color;
+        text-decoration: $hover-decoration;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+}

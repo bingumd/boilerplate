@@ -1,0 +1,53 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// ELEMENT: HEADINGS
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Dependencies
+@use 'sass:tools';
+
+// Variables
+$color       : tools.color('black') !default;
+$font-family : tools.font-family('title') !default;
+$font-weight : 500 !default;
+$line-height : 1 !default;
+$h1-font-size: tools.font-size('h1') !default;
+$h2-font-size: tools.font-size('h2') !default;
+$h3-font-size: tools.font-size('h3') !default;
+$h4-font-size: tools.font-size('h4') !default;
+$h5-font-size: tools.font-size('h5') !default;
+$h6-font-size: tools.font-size('h6') !default;
+
+// Output
+h1, h2, h3, h4, h5, h6 {
+    color: $color;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: $h5-font-size;
+    line-height: 1.4;
+}
+
+h6 {
+    font-size: $h6-font-size;
+    line-height: 1.4;
+}

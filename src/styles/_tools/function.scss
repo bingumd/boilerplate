@@ -1,0 +1,17 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// TOOLS: CSS VARIABLES
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+@use 'sass:settings/global';
+
+@function color($value) {
+    @return var(--#{global.$color-variable-prefix}#{$value});
+}
+
+@function font-family($value) {
+    @return var(--#{global.$font-family-variable-prefix}#{$value});
+}
+
+@function font-size($value) {
+    @return var(--#{global.$font-size-variable-prefix}#{$value});
+}

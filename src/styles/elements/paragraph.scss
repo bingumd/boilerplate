@@ -1,0 +1,15 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// ELEMENT: PARAGRAPH
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Dependencies
+@use 'sass:tools';
+
+// Variables
+$margin-bottom: 1.5em !default;
+
+// Output
+p {
+    margin-bottom: $margin-bottom;
+    @extend %reset-margins;
+}

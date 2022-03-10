@@ -1,0 +1,15 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// SETTINGS: GLOBAL
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Prefix for :root CSS variables
+$variable-prefix: '' !default;
+
+// Prefix for `color` CSS variables
+$color-variable-prefix: $variable-prefix + 'color-' !default;
+
+// Prefix for `font-family` CSS variables
+$font-family-variable-prefix: $variable-prefix + 'font-family-' !default;
+
+// Prefix for `fon-size` CSS variables
+$font-size-variable-prefix: $variable-prefix + 'font-size-' !default;

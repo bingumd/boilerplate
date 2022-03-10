@@ -1,0 +1,3 @@
+{% macro attributes(attr) %}
+{% for key, value in attr %} {{ key }}{{ value ? '="' ~ value ~ '"' : '' }}{% endfor %}
+{% endmacro %}

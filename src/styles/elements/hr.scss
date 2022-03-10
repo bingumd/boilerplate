@@ -1,0 +1,25 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// ELEMENT: HORIZONTAL RULES
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Dependencies
+@use 'sass:tools';
+
+// Variables
+$height: 1px !default;
+$margin: 1rem !default;
+$color : tools.color('gray-200');
+
+// Output
+hr {
+    margin: $margin 0;
+    border: none;
+    background-color: currentColor;
+    color: $color;
+
+    &:not([size]) {
+        height: $height;
+    }
+
+    @extend %reset-margins;
+}

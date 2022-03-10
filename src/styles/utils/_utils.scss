@@ -1,0 +1,21 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// UTILS
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// Helpers and overrides
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Dependencies
+@use 'sass:settings';
+
+// Override and extends
+@use '@bingumd/sass-utils' with(
+    $breakpoints: settings.$breakpoints,
+    $color-extend: settings.$colors,
+    $background-color-extend: settings.$colors,
+    $border-color-extend: settings.$colors,
+    $font-family-extend: settings.$fonts-family,
+    $font-size-extend: settings.$fonts-size,
+);
+
+// Output
+@include sass-utils.init();

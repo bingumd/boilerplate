@@ -1,0 +1,26 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// ELEMENT: BODY
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Dependencies
+@use 'sass:tools';
+
+// Variables
+$bg-color   : tools.color('white') !default;
+$color      : tools.color('gray-700') !default;
+$font-family: tools.font-family('body') !default;
+$font-size  : tools.font-size('body') !default;
+$font-weight: 400 !default;
+$line-height: 1.8 !default;
+
+// Output
+body {
+    background-color: $bg-color;
+    color: $color;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

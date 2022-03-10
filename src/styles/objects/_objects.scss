@@ -1,0 +1,11 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// OBJECTS
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// Common non-cosmetic structural design patterns
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+@forward 'page' as page-* ;
+@forward 'main' as main-* ;
+@forward 'container' as container-*;
+@forward 'columns' as columns-* ;
+@forward 'column' as column-*;

@@ -1,0 +1,30 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// OBJECT: CONTAINER
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// Dependencies
+@use 'sass:tools';
+
+// Variables
+$width: 1200px !default;
+$width-lg: 1440px !default;
+$padding: tools.fluid-scale((30px, 90px)) !default;
+
+// Output
+.o-container {
+    --width: #{$width};
+
+    width: 100%;
+    padding-right: $padding;
+    padding-left: $padding;
+
+    &:not(&--full) {
+        max-width: calc(var(--width) + #{$padding} * 2);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &--lg {
+        --width: #{$width-lg};
+    }
+}
